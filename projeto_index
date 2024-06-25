@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central das Reviews - De Gamers para Gamers</title>
+</head>
+
+<body>
+    <center>
+        <h1>Central das Reviews - De Gamers para Gamers</h1>
+        <a href="projeto_definitivo.html"><input type="button" value="Submeter Review"></a>
+        <a href="visualiza_review.php"><input type="button" value="Visualizar Review"></a>
+     </center>
+</body>
+</html>
+</html>
