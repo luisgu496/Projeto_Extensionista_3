@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Metadados -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="projeto_definitivo.css" media="screen">
+
+    <!-- Título da página (aparece na aba) -->
+    <title>Video Game Review</title>
+</head>
+
+<body>  
+
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+    <div>
+        <h1 id="titulo">Sua Review Aqui!</h1>
+        <p id="subtitulo">Por favor, preencha o formulário abaixo</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form method="POST" action="submit_review.php">
+
+        <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+        <div class="campo">
+            <label for="nome"><strong>Nome do usuário</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <!-- Campo do jogo com legenda "jogo" e css de classe "campo" -->
+        <div class="campo">
+            <label for="jogo"><strong>Nome do jogo</strong></label>
+            <input type="text" name="jogo" id="jogo" required>
+        </div>
+
+        <!-- Campo da data de término com legenda "date_finished" e css de classe "campo" -->
+        <div class="campo">
+            <label for="date_finished"><strong>Data em que você terminou o jogo</strong></label>
+            <input type="date" name="date_finished" id="date_finished">
+        </div>
+
+        <!-- Campo do console com legenda "console" e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Console</strong></label>
+            <label>
+                <input type="radio" name="console" value="Playstation" required>Playstation
+            </label>
+            <label>
+                <input type="radio" name="console" value="Xbox">Xbox
+            </label>
+            <label>
+                <input type="radio" name="console" value="Nintendo">Nintendo
+            </label>
+            <label>
+                <input type="radio" name="console" value="PC">PC
+            </label>
+        </div>
+
+        <!-- Campo da nota com legenda "nota" e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Nota</strong></label>
+            <label>
+                <input type="radio" name="nota" value="1" required>1
+            </label>
+            <label>
+                <input type="radio" name="nota" value="2">2
+            </label>
+            <label>
+                <input type="radio" name="nota" value="3">3
+            </label>
+            <label>
+                <input type="radio" name="nota" value="4">4
+            </label>
+            <label>
+                <input type="radio" name="nota" value="5">5
+            </label>
+            <label>
+                <input type="radio" name="nota" value="6">6
+            </label>
+            <label>
+                <input type="radio" name="nota" value="7">7
+            </label>
+            <label>
+                <input type="radio" name="nota" value="8">8
+            </label>
+            <label>
+                <input type="radio" name="nota" value="9">9
+            </label>
+            <label>
+                <input type="radio" name="nota" value="10">10
+            </label>
+        </div>
+
+        <!-- Caixa de texto para a review -->
+        <div class="campo">
+            <label for="review"><strong>Review</strong></label>
+            <textarea rows="6" style="width: 26em" id="review" name="review" maxlength="500" required></textarea>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <div class="botao-container">
+            <button class="botao" type="submit">Terminar</button>
+        </div>            
+
+    </form>
+
+</body>
+
+</html>
